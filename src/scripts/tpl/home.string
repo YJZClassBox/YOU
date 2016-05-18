@@ -1,0 +1,55 @@
+<header>
+  <ul>
+    <li class="yo-ico">&#xe619;</li>
+    <li>
+      <div>
+        <span class="active" id="hot" action-type="tap.slide">热点</span>
+        <span action-type="tap.slide">关注</span>
+      </div>
+    </li>
+    <li class="yo-ico">&#xe618;</li>
+  </ul>
+</header>
+<div class="swiper-container" id="home-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <nav>
+        <ul id="home-hot-nav">
+          <li class="active" action-type="tap.hot.slide">足球现场</li>
+          <li action-type="tap.hot.slide">足球生活</li>
+          <li action-type="tap.hot.slide">足球美女</li>
+        </ul>
+      </nav>
+      <div class="swiper-container" id="home-hot-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section spa-widget="scroll">
+              <div>
+                <ul ms-repeat="homeList">
+                  <li>
+                    <i><img ms-src="el[0].img" /></i>
+                    <b ms-text="el[0].title"></b>
+                  </li>
+                  <li></li>
+                  <li ms-class-hidden="!el[1]">
+                    <i><img ms-src="el[1].img" /></i>
+                    <b ms-text="el[1].title"></b>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            足球生活
+          </div>
+          <div class="swiper-slide">
+            足球美女
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      关注
+    </div>
+  </div>
+</div>
